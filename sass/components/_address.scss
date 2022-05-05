@@ -1,0 +1,34 @@
+.address {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: var(--white-color);
+      white-space: pre;
+
+      &__span {
+            display: inline-block;
+            margin-bottom: 9px;
+      }
+}
+
+.address__contact {
+      display: inline-block;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+            color: var(--decorative-color);
+      }
+
+      &:not(:last-child) {
+            margin-bottom: 9px;
+      }
+}
+

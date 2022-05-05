@@ -1,0 +1,23 @@
+.clients {
+      &__item:not(:last-child) {
+            margin-right: 30px;
+      }
+}
+
+.clients__link {
+      display: flex;
+      padding: 16px 32px;
+      border-radius: 4px;
+      border: 1px solid var(--icon-first-color);
+      fill: var(--icon-first-color);
+      transition-property: fill, border-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+            fill: var(--decorative-color);
+            border-color: var(--decorative-color);
+      }
+}
+
