@@ -1,40 +1,69 @@
 .page-header {
       padding: 0;
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding-top: 16px;
+      padding-bottom: 16px;
       border-bottom: 1px solid var(--menu-border-color);
 
+      &__list {
+            display: none;
+      }
+
       &__logo {
-            margin-right: 93px;
             color: var(--black-color);
+            margin-right: 284px;
       }
+}
 
-      &__icon {
-            margin-right: 10px;
-      }
+.page-header__burger-icon {
+      width: 24px;
+      height: 16px;
+
+      &:hover {
+                  fill: var(--decorative-color);
+                  cursor: pointer;
+            }
+}
+
+
+
+
+// .page-header {
+//       padding: 0;
+//       padding-top: 24px;
+//       padding-bottom: 24px;
+//       border-bottom: 1px solid var(--menu-border-color);
+
+//       &__logo {
+//             margin-right: 93px;
+//             color: var(--black-color);
+//       }
+
+//       &__icon {
+//             margin-right: 10px;
+//       }
       
-      &__item:not(:last-child) {
-            margin-right: 30px;
-      }
-}
+//       &__item:not(:last-child) {
+//             margin-right: 30px;
+//       }
+// }
+ 
+// .page-header__contact {
+//       display: flex;
+//       align-items: center;
+//       font-weight: 500;
+//       font-size: 14px;
+//       line-height: 1.143;
+//       letter-spacing: 0.02em;
+//       text-decoration: none;
+//       color: var(--second-color);
+//       fill: var(--second-color);
+//       transition-property: color, fill;
+//       transition-duration: 250ms;
+//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.page-header__contact {
-      display: flex;
-      align-items: center;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.143;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      color: var(--second-color);
-      fill: var(--second-color);
-      transition-property: color, fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover,
-      &:focus {
-            color: var(--decorative-color);
-            fill: var(--decorative-color);
-      }
-}
+//       &:hover,
+//       &:focus {
+//             color: var(--decorative-color);
+//             fill: var(--decorative-color);
+//       }
+// }

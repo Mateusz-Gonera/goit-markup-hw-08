@@ -1,13 +1,27 @@
 .logo {
       font-family: var(--second-font);
       font-weight: 700;
-      font-size: 26px;
-      line-height: 1.192;
+      font-size: 24px;
+      line-height: 1.167;
       letter-spacing: 0.03em;
       text-decoration: none;
-      
+
       &__span {
             color: var(--decorative-color);
       }
 }
+
+
+// .logo {
+//       font-family: var(--second-font);
+//       font-weight: 700;
+//       font-size: 26px;
+//       line-height: 1.192;
+//       letter-spacing: 0.03em;
+//       text-decoration: none;
+      
+//       &__span {
+//             color: var(--decorative-color);
+//       }
+// }
 
