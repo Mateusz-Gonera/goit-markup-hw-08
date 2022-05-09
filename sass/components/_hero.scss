@@ -7,16 +7,71 @@
       background-repeat: no-repeat;
       background-position: center top;
       background-size: cover;
+
+      &__heading {
+                  font-weight: 900;
+                  font-size: 26px;
+                  line-height: 1.615;
+                  text-align: center;
+                  letter-spacing: 0.06em;
+                  text-transform: uppercase;
+                  color: var(--white-color);
+                  margin-bottom: 30px;
+            }
+
+      &__button {
+            display: block;
+            padding: 10px 41px;
+            margin: 0 auto;
+      }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 480px), 
-screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 480px), 
-screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 480px), 
-screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), 
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), 
+screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), 
+screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
       .hero {
       background-image:
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url("../images/background/backgroundmobile@2x.jpg");
+      }
+}
+
+@media screen and (min-width: 768px) {
+      .hero {
+      background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/background/backgroundtablet1x.jpg");
+      }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+      .hero {
+            background-image:
+                  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                  url("../images/background/backgroundtablet@2x.jpg");
+      }
+}
+
+@media screen and (min-width: 1200px) {
+      .hero {
+            background-image:
+                  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                  url("../images/background/backgrounddesktop1x.jpg");
+      }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1600px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1600px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1600px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1600px) {
+      .hero {
+            background-image:
+                  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                  url("../images/background/backgrounddesktop@2x.jpg");
       }
 }
 
@@ -29,21 +84,21 @@ screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 480px)
 //       background-size: 1600px;
 //       padding: 0;
 
-//       &__heading {
-//             font-weight: 900;
-//             font-size: 44px;
-//             line-height: 1.36;
-//             text-align: center;
-//             letter-spacing: 0.06em;
-//             text-transform: uppercase;
-//             color: var(--white-color);
-//             white-space: pre;
-//             margin-bottom: 30px;
-//       }      
+      // &__heading {
+      //       font-weight: 900;
+      //       font-size: 44px;
+      //       line-height: 1.36;
+      //       text-align: center;
+      //       letter-spacing: 0.06em;
+      //       text-transform: uppercase;
+      //       color: var(--white-color);
+      //       white-space: pre;
+      //       margin-bottom: 30px;
+      // }      
       
-//       &__button {
-//             display: block;
-//             padding: 10px 41px;
-//             margin: 0 auto;
-//       }
+      // &__button {
+      //       display: block;
+      //       padding: 10px 41px;
+      //       margin: 0 auto;
+      // }
 // }
