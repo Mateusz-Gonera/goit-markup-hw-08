@@ -1,4 +1,7 @@
 .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       position: fixed;
       left: 0;
       top: 0;
@@ -11,7 +14,7 @@
 
       &__nav-list {
             display: block;
-            margin-bottom: 37.94vh;
+            flex-grow: 1;
       }
 
       &__nav-item:not(:last-child) {
@@ -20,7 +23,7 @@
 
       &__contact-list {
             display: block;
-            margin-bottom: 8.04vh;
+            margin-bottom: 64px;
       }
 
       &__contact-item:not(:last-child) {
@@ -37,7 +40,8 @@
       }
 
       &__social-list {
-            justify-content: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
       }
 
 
@@ -108,9 +112,9 @@
 .mobile-menu__social-item {
       position: relative;
 
-      &:not(:last-child) {
-            margin-right: 20px;
-      }
+      // &:not(:last-child) {
+      //       margin-right: 20px;
+      // }
 
       &:not(:first-child)::before {
             content: "";

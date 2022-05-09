@@ -51,7 +51,7 @@
             &:hover::after,
             &:focus::after {
                   height: 4px;
-                  transform: translateY(34.25px)
+                  transform: translateY(32.25px)
             }
 
             &--active::after {
@@ -63,7 +63,7 @@
                   bottom: 0;
                   left: 0;
                   background-color: var(--decorative-color);
-                  transform: translateY(34.25px);
+                  transform: translateY(32.25px);
                   border-radius: 2px;
             }
       }
@@ -75,21 +75,27 @@
             &__item:not(:last-child) {
                    margin-right: 46px;
             }
+
+            &__list {
+                  margin-right: 345px;
+                  margin-left: 93px;
+            }
+            
       }
 
       .navigation__link {
 
             &::after {
-                  transform: translateY(28px);
+                  transform: translateY(25px);
             }
 
             &:hover::after,
             &:focus::after {
-                  transform: translateY(31.25px);
+                  transform: translateY(30.25px);
             }
 
             &--active::after {
-                  transform: translateY(31.25px);
+                  transform: translateY(30.25px);
             }
       }
 }

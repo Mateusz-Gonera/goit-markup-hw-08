@@ -301,6 +301,36 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .page-header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-header__item:not(:last-child) {
+    margin: 0;
+    margin-right: 30px;
+  }
+  .page-header__mail-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+  .page-header__phone-icon {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+  }
+  .page-header__contact {
+    font-size: 14px;
+    line-height: 1.143;
+  }
+}
+
 .navigation {
   display: none;
 }
@@ -346,7 +376,7 @@ img {
   }
   .navigation__link:hover::after, .navigation__link:focus::after {
     height: 4px;
-    transform: translateY(34.25px);
+    transform: translateY(32.25px);
   }
   .navigation__link--active::after {
     content: "";
@@ -357,7 +387,7 @@ img {
     bottom: 0;
     left: 0;
     background-color: var(--decorative-color);
-    transform: translateY(34.25px);
+    transform: translateY(32.25px);
     border-radius: 2px;
   }
 }
@@ -366,14 +396,18 @@ img {
   .navigation__item:not(:last-child) {
     margin-right: 46px;
   }
+  .navigation__list {
+    margin-right: 345px;
+    margin-left: 93px;
+  }
   .navigation__link::after {
-    transform: translateY(28px);
+    transform: translateY(25px);
   }
   .navigation__link:hover::after, .navigation__link:focus::after {
-    transform: translateY(31.25px);
+    transform: translateY(30.25px);
   }
   .navigation__link--active::after {
-    transform: translateY(31.25px);
+    transform: translateY(30.25px);
   }
 }
 
@@ -866,6 +900,9 @@ img {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
@@ -879,7 +916,7 @@ img {
 
 .mobile-menu__nav-list {
   display: block;
-  margin-bottom: 37.94vh;
+  flex-grow: 1;
 }
 
 .mobile-menu__nav-item:not(:last-child) {
@@ -888,7 +925,7 @@ img {
 
 .mobile-menu__contact-list {
   display: block;
-  margin-bottom: 8.04vh;
+  margin-bottom: 64px;
 }
 
 .mobile-menu__contact-item:not(:last-child) {
@@ -905,7 +942,8 @@ img {
 }
 
 .mobile-menu__social-list {
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__close-btn {
@@ -968,10 +1006,6 @@ img {
 
 .mobile-menu__social-item {
   position: relative;
-}
-
-.mobile-menu__social-item:not(:last-child) {
-  margin-right: 20px;
 }
 
 .mobile-menu__social-item:not(:first-child)::before {
