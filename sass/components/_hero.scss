@@ -61,6 +61,12 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px
             background-image:
                   linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                   url("../images/background/backgrounddesktop1x.jpg");
+
+            &__heading {
+                  font-weight: 900;
+                  font-size: 44px;
+                  line-height: 1.364;
+            }
       }
 }
 
