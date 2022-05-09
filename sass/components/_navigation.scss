@@ -9,6 +9,11 @@
             &__item:not(:last-child) {
                   margin-right: 60px;
             }
+
+            &__list {
+                  margin-right: 101px;
+                  margin-left: 83px;
+            }
       }
 
       .navigation__link {
@@ -60,6 +65,31 @@
                   background-color: var(--decorative-color);
                   transform: translateY(34.25px);
                   border-radius: 2px;
+            }
+      }
+}
+
+@media screen and (min-width: 1200px) {
+      .navigation {
+
+            &__item:not(:last-child) {
+                   margin-right: 46px;
+            }
+      }
+
+      .navigation__link {
+
+            &::after {
+                  transform: translateY(28px);
+            }
+
+            &:hover::after,
+            &:focus::after {
+                  transform: translateY(31.25px);
+            }
+
+            &--active::after {
+                  transform: translateY(31.25px);
             }
       }
 }
