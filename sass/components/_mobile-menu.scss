@@ -104,14 +104,16 @@
       color: var(--decorative-color);
       position: relative;
 
-      &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 0;
-            height: 100%;
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: translateX(-10px);
-      }
+
+}
+
+.mobile-menu__social-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      transform: translateX(-10px);
 }
