@@ -73,7 +73,7 @@ img {
 }
 
 .hero .container {
-  padding: 200px 0;
+  padding: 118px 0;
 }
 
 .page-footer .container {
@@ -101,11 +101,21 @@ img {
   .container {
     max-width: 1600px;
   }
+  .hero .container {
+    padding: 200px 0;
+  }
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .second-heading {
@@ -412,29 +422,18 @@ img {
 }
 
 .hero {
-  background-color: var(--main-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundimg1.jpg");
-  background-repeat: no-repeat;
-  background-size: 1600px;
   padding: 0;
+  background-color: var(--main-background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/backgroundmobile1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
-.hero__heading {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  white-space: pre;
-  margin-bottom: 30px;
-}
-
-.hero__button {
-  display: block;
-  padding: 10px 41px;
-  margin: 0 auto;
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/backgroundmobile@2x.jpg");
+  }
 }
 
 .advantages__icon {
