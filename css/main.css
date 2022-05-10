@@ -120,13 +120,19 @@ img {
 
 .second-heading {
   font-weight: 700;
-  font-size: 36px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--main-color);
   padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .second-heading {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .third-heading {
@@ -597,8 +603,13 @@ img {
   background-color: var(--second-background-color);
 }
 
+.team__list {
+  display: block;
+  list-style: none;
+}
+
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__figure {
@@ -608,16 +619,15 @@ img {
 }
 
 .team__caption {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.186;
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--white-color);
-  width: 270px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__span {
