@@ -99,7 +99,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    max-width: 1200px;
   }
   .hero .container {
     padding: 200px 0;
@@ -136,6 +136,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .third-heading {
+    text-align: left;
+  }
 }
 
 .logo {
@@ -484,9 +490,10 @@ img {
 }
 
 .advantages__list {
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 
 .advantages__icon {
@@ -504,41 +511,86 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  margin: 0;
+  margin-top: 10px;
+}
+
+.advantages__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-right: -30px;
+  }
+  .advantages__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+  .advantages__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+  }
+  .advantages__item {
+    margin: 0;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .advantages__item:not(:first-child) {
+    margin-top: 0;
+  }
 }
 
 .activities {
-  padding-top: 0;
-  display: flex;
-  justify-content: center;
+  display: none;
 }
 
-.activities__label {
-  position: absolute;
-  background-color: rgba(47, 48, 58, 0.8);
-  padding: 27px 90px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.activities__paragraph {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin: 0 auto;
-}
-
-.activities__item {
-  position: relative;
-}
-
-.activities__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .activities {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .activities__label {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 90px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .activities__paragraph {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 0 auto;
+  }
+  .activities__item {
+    position: relative;
+  }
+  .activities__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team {
