@@ -1,3 +1,76 @@
+.page-footer {
+      background-color: var(--main-background-color);
+
+      &__third-heading {
+            color: var(--white-color);
+            margin-bottom: 20px;
+      }
+
+      &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white-color);
+            margin-bottom: 20px;
+      }
+
+      &__address-container {
+            display: block;
+            padding-bottom: 60px;
+      }
+
+      &__address {
+            text-align: center;
+      }
+
+      &__form-container {
+            margin-top: 60px;
+      }
+      
+      &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+      &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            padding-left: 42px;
+            padding-right: 27px;
+            margin-top: 20px;
+      }
+      
+      &__icon {
+            margin-left: 24px;
+            width: 24px;
+            height: 24px;
+            fill: var(--white-color);
+      }
+}
+
+
+
+.page-footer__input {
+      width: 358px;
+      padding: 15px 0;
+      padding-left: 16px;
+      margin-right: 12px;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+
+      &:placeholder-shown {
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+      }
+}
 
 
 
@@ -29,7 +102,7 @@
 //       &__form-container {
 //             margin-left: 78px;
 //       }
-      
+
 //       &__form {
 //             display: flex;
 //             align-items: center;
@@ -42,7 +115,7 @@
 //             padding-left: 42px;
 //             padding-right: 27px;
 //       }
-      
+
 //       &__icon {
 //             margin-left: 24px;
 //             width: 24px;
@@ -50,24 +123,3 @@
 //             fill: var(--white-color);
 //       }
 // }
-
-
-
-// .page-footer__input {
-//       width: 358px;
-//       padding: 15px 0;
-//       padding-left: 16px;
-//       margin-right: 12px;
-//       background-color: transparent;
-//       border: 1px solid rgba(255, 255, 255, 0.3);
-//       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//       border-radius: 4px;
-
-//       &:placeholder-shown {
-//             font-size: 16px;
-//             line-height: 1.25;
-//             letter-spacing: 0.03em;
-//             color: rgba(255, 255, 255, 0.6);
-//       }
-// }
-
