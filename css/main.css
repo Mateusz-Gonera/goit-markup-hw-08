@@ -907,6 +907,10 @@ img {
   }
 }
 
+.projects {
+  padding-top: 0;
+}
+
 .modal {
   position: absolute;
   top: 50%;
