@@ -4,6 +4,14 @@
       &__third-heading {
             color: var(--white-color);
             margin-bottom: 20px;
+            text-align: center;
+      }
+
+      &__contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
       }
 
       &__logo {
@@ -12,10 +20,13 @@
             justify-content: center;
             color: var(--white-color);
             margin-bottom: 20px;
-      }
+      }      
 
       &__address-container {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 60px;
       }
 
@@ -24,6 +35,10 @@
       }
 
       &__form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             margin-top: 60px;
       }
       
@@ -55,10 +70,10 @@
 
 
 .page-footer__input {
-      width: 100%;
+      width: 91vw;
+      max-width: 450px;
       padding: 15px 0;
       padding-left: 16px;
-      margin-right: 12px;
       background-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -72,7 +87,59 @@
       }
 }
 
+@media screen and (min-width: 768px) {
+      .page-footer {
+            &__contact-wrapper {
+                  flex-direction: row;
+                  align-items: baseline;
+            }
 
+            &__address-container {
+                  margin-right: 144px;
+            }
+      }
+}
+
+@media screen and (min-width: 1200px) {
+      .page-footer {
+            padding: 60px 0;
+
+            &__third-heading {
+                  text-align: left;
+            }
+
+            &__address-container {
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  margin-right: 70px;
+                  margin-bottom: 0;
+            }
+
+            &__address {
+                  text-align: left;
+            }
+
+            &__form-container {
+                  align-items: flex-start;
+                  margin-top: 0;
+                  margin-left: 78px;
+            }
+
+            &__form {
+                  flex-direction: row;
+            }
+
+            &__button {
+                  margin-top: 0;
+                  margin-left: 12px;
+            }
+      }
+
+      .page-footer__input {
+            max-width: 358px;
+      }
+
+}
 
 // .page-footer {
 //       background-color: var(--main-background-color);
